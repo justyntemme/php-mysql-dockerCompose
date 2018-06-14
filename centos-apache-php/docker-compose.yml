@@ -1,0 +1,8 @@
+version: '3'
+services:
+        centos-php-mysql-apache:
+                image: naqoda/centos-apache-php
+                ports:
+                        - 80:80
+                volumes:
+                        - "/srv/php-mysql-dockerCompose/sites/test/:/var/www/app/public_html/"
